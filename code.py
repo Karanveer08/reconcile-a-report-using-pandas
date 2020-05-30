@@ -71,7 +71,7 @@ df_sub_sum = sum_row.transpose()
 df_sub_sum = df_sub_sum.applymap(lambda x: str(x)+'$')
 final_table = formatted_df.append(df_sub_sum,ignore_index=True)
 print(final_table)
-final_table.rename(index={-1:'Total'})
+final_table.rename(index={0:'Total'})
 # Code ends here
 
 
